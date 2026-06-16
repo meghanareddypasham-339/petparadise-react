@@ -1,0 +1,36 @@
+.filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+  align-items: center;
+}
+
+.select {
+  padding: 10px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: white;
+  min-width: 160px;
+}
+
+.select:focus {
+  border-color: #e76f51;
+  outline: none;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.range {
+  width: 200px;
+  accent-color: #e76f51;
+  cursor: pointer;
+}

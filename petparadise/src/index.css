@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+input, select, textarea {
+  font-family: Arial, sans-serif;
+  outline: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-orange {
+  background: #e76f51;
+  color: white;
+}
+
+.btn-orange:hover {
+  background: #c4503a;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #e76f51;
+  color: #e76f51;
+}
+
+.btn-outline:hover {
+  background: #e76f51;
+  color: white;
+}
+
+.page {
+  min-height: calc(100vh - 130px);
+  padding: 30px 0;
+}
+
+.page-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.badge-green { background: #d1fae5; color: #065f46; }
+.badge-red { background: #fee2e2; color: #991b1b; }
+.badge-blue { background: #dbeafe; color: #1e40af; }
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #e76f51;
+}
+
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+  border-color: #ef4444;
+}
+
+.form-error {
+  color: #ef4444;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.pets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #888;
+}
+
+.empty-state img {
+  width: 120px;
+  margin: 0 auto 16px;
+  opacity: 0.4;
+}
+
+.empty-state p {
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.pet-description {
+  margin: 10px 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.pet-extra {
+  margin: 10px 0;
+}
+
+.pet-status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.pet-status.available {
+  background: #d4edda;
+  color: #155724;
+}
+
+.pet-status.reserved {
+  background: #fff3cd;
+  color: #856404;
+}

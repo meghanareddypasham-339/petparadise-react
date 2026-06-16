@@ -1,0 +1,150 @@
+.hero {
+  background: #e76f51;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 60px;
+  gap: 40px;
+}
+
+.heroText {
+  color: white;
+  max-width: 500px;
+}
+
+.heroText h1 {
+  font-size: 2.2rem;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.heroText p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.heroBtns {
+  display: flex;
+  gap: 12px;
+}
+
+.heroBtns .btn-outline {
+  border-color: white;
+  color: white;
+}
+
+.heroBtns .btn-outline:hover {
+  background: white;
+  color: #e76f51;
+}
+
+.heroImg {
+  width: 420px;
+  flex-shrink: 0;
+}
+
+.heroImg img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.section {
+  padding: 50px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.catsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.catCard {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #eee;
+  transition: border-color 0.2s, transform 0.2s;
+  display: block;
+}
+
+.catCard:hover {
+  border-color: #e76f51;
+  transform: translateY(-3px);
+}
+
+.catCard img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.catLabel {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  background: white;
+}
+
+.about {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.aboutImg img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.aboutText h2 {
+  font-size: 1.6rem;
+  margin-bottom: 14px;
+}
+
+.aboutText p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.stats {
+  display: flex;
+  gap: 28px;
+  margin-top: 24px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat strong {
+  font-size: 1.6rem;
+  color: #e76f51;
+}
+
+.stat span {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+@media (max-width: 900px) {
+  .hero { flex-direction: column; padding: 30px 20px; }
+  .heroImg { width: 100%; }
+  .catsGrid { grid-template-columns: repeat(3, 1fr); }
+  .about { grid-template-columns: 1fr; }
+}

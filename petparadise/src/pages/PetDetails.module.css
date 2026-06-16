@@ -1,0 +1,196 @@
+.breadcrumb {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  color: #888;
+}
+
+.breadcrumb a:hover {
+  color: #e76f51;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  margin-bottom: 30px;
+}
+
+.mainImg {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.category {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #e76f51;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.breed {
+  color: #888;
+  margin-bottom: 14px;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e76f51;
+  margin-bottom: 18px;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 18px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.metaItem small {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 3px;
+}
+
+.metaItem strong {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.desc {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 0;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  font-size: 0.9rem;
+  color: #888;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+}
+
+.tab:hover {
+  color: #e76f51;
+}
+
+.activeTab {
+  color: #e76f51;
+  font-weight: bold;
+  border-bottom-color: #e76f51;
+}
+
+.tabContent {
+  background: white;
+  border: 1px solid #eee;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 24px;
+  margin-bottom: 30px;
+}
+
+.tabContent h3 {
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+}
+
+.careList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.careTip {
+  padding: 10px 14px;
+  background: #f0fdf4;
+  border-radius: 6px;
+  color: #065f46;
+  font-size: 0.9rem;
+}
+
+.review {
+  padding: 14px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.reviewHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.vaccTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.vaccTable th {
+  text-align: left;
+  padding: 10px 14px;
+  background: #f9f9f9;
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+  border-bottom: 1px solid #eee;
+}
+
+.vaccTable td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .btns {
+    flex-direction: column;
+  }
+  .btns .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}

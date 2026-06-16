@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Career Recommendation Result</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🏆 Recommended Career</h1>
+
+    <div class="card">
+
+        <h2>{{ career.name }}</h2>
+
+        <p>{{ career.description }}</p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🎯 Match Percentage</h3>
+        <p>{{ percentage }}%</p>
+
+        <h3>📈 Success Probability</h3>
+        <p>{{ probability }}%</p>
+
+        <h3>💰 Salary Range</h3>
+        <p>{{ career.salary }}</p>
+
+        <h3>📊 Demand Level</h3>
+        <p>{{ career.demand }}</p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>👨‍🎓 Student Profile</h3>
+
+        <p><strong>Experience:</strong> {{ experience }}</p>
+
+        <p><strong>Course:</strong> {{ course }}</p>
+
+        <p><strong>Interest:</strong> {{ interest }}</p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>✅ Matched Skills</h3>
+
+        <ul>
+            {% for skill in matched_skills %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>❌ Skills To Improve</h3>
+
+        <ul>
+            {% for skill in missing_skills %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📚 Career Roadmap</h3>
+
+        <ol>
+            {% for step in career.roadmap %}
+            <li>{{ step }}</li>
+            {% endfor %}
+        </ol>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🤖 AI Recommendation Reason</h3>
+
+        <ul>
+            <li>Your skills matched this career.</li>
+            <li>Your study hours satisfy the requirement.</li>
+            <li>The utility score was highest for this career.</li>
+            <li>The recommendation was generated using AI concepts.</li>
+        </ul>
+
+    </div>
+
+    <a href="/" class="btn">
+        🔄 Try Again
+    </a>
+
+    <br><br>
+
+    <div class="footer">
+
+        <p><b>Developed By</b></p>
+
+        <p>Meghana </p>
+
+        <p>Srivalli </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
