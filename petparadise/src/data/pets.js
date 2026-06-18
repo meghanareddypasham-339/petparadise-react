@@ -160,7 +160,7 @@ const pets = [
   age: "6 months",
   price: 2500,
   tag: null,
-  image: "https://www.nearby-petstore.in/media/pets/Lovebird-in-cage.jpg",
+  image: "https://i.pinimg.com/736x/3b/9d/8c/3b9d8c9a2d900f3c4ec6639fa2ef74b0.jpg",
   description: "Colorful and playful bird that enjoys companionship.",
 },
 {
